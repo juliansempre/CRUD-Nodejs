@@ -1,0 +1,11 @@
+
+<h1 class="text-center">Editando tarefa: {{post.dataValues.titulo}}</h1>
+
+<form action="/update/{{post.dataValues.id}}" method="POST">
+    <p>Titulo: </p>
+    <input type="text" name="titulo" value="{{post.dataValues.titulo}}">
+    <p>Conteudo: </p>
+    <textarea name="conteudo">{{post.dataValues.conteudo}}</textarea><br></br>
+    <a href="/" type="submit" class="btn btn-outline-primary">Inicio</a>
+    <button type="submit" class="btn btn-outline-primary"> Salvar </button>
+</form>
